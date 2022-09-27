@@ -13,12 +13,12 @@ Compute stack usage from C sources and compiler output files
 -  Run a first pass to generate template config file. All `.gkd` files provided and corresponding `.su` will be parsed:
 
 	```
-	./stacknowledge.py -c conf.ini example.c.gkd
+	./stacknowledge.py -o conf.ini example.c.gkd
 	```
 
 -  Modify the config file accordingly to provide informations the parser cannot guess.
 
--  Run a second pass to generate template config file:
+-  Run a second pass to generate template config file (`-o` changed to `-c`!):
 
 	```
 	./stacknowledge.py -c conf.ini example.c.gkd
